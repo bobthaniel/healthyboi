@@ -15,3 +15,9 @@ if "%tm%" lss "03:30:00,00" ( set "task=slp" ) else ( set "task=ift" )
 
 :ift
 if "%tm%" geq "22:00:00,00" ( set "task=wake" )
+
+:slp
+sleep.vbs
+
+:wake
+wake.vbs
